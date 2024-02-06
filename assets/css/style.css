@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #022346;
+    --second-color: #ffffff;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    /*border: 1px solid black; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section {
+    padding: 3rem 3rem;
+    border-top: 1px solid #dddddd;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+span {
+    font-weight: 700;
+}
+
+.i-decorate-white {
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+
+/* Header start */
+/* navigation start */
+.nav {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-li {
+    padding-left: 1.5rem;
+    border-bottom: none;
+}
+
+.menu-li a, .icon-name {
+    color: var(--second-color);
+}
+
+.menu-a {
+    padding: 0 1rem;
+}
+/* navigation end */
+
+/* Homepage start */
+header {
+    position: relative;
+}
+
+.home-header {
+    background-image: url(../../assets/images/header-background-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: var(--second-color);
+}
+
+.header-info {
+    background-color: var(--primary-color);
+    width: 50%;
+    position: absolute;
+    bottom: 20%;
+}
+
+.header-detail {
+    padding-left: 1rem;
+}
+
+.header-detail h1, .header-detail h4, .header-detail p{
+    color: var(--second-color);
+}
+
+.header-info-detail a {
+    display: block;
+}
+
+.header-info-detail p {
+    display: inline-block;
+}
+/* Header end*/
+
+/* About Me start*/
+.about-info {
+    display: flex;
+    align-items: center;
+}
+
+.about-detail {
+    width: 60%;
+    padding: 0 1rem;
+    line-height: 1.5rem;
+}
+
+.about-img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-info img {
+    max-width: 100%;
+}
+
+.about-hobbies {
+    display: flex;
+}
+
+.about-skills li {
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    border-radius: 16px;
+    padding: 5px 15px;
+    margin: 0.1rem;
+}
+
+.about-hobbies div {
+    width: 50%;
+    padding: 0.5rem;
+}
+/* About Me end*/
+
+/* Project Start */
+.project-box {
+    display: inline-block;
+    margin: 10px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 20px 40px;
+    border-bottom: 2px solid var(--primary-color);
+}
+/* Project end */
+
+/* Homepage end*/
+
+/*Resume page*/
+.resume-header, .project-header {
+    height: 10vh;
+}
+
+section {
+    padding: 10px;
+}
+.resume {
+    display: flex;
+}
+
+.resume_left {
+    width: 20%;
+}
+
+.resume_right {
+    width: 80%;
+}
+/*Resume page end*/
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    color: var(--second-color); /* 為什麼電話沒有換顏色? */
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Header start*/
+    /* nav start */
+    .menu-a {
+        font-size: 0.8rem;
+    }
+    /* nav end */
+
+    header {
+        background-position: right;
+    }
+
+    .header-info {
+        width: 100%;
+        bottom: 10%;
+    }
+    /*Header end*/
+
+    /* About Me start*/
+    .about-info {
+        flex-wrap: wrap-reverse;
+    }
+
+    .about-detail, .about-img {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    /* About Me end*/
+
+    /*Resume page*/
+    .resume {
+        flex-wrap: wrap;
+    }
+
+    .resume_left {
+        width: 100%;
+    }
+
+    .resume_right {
+        width: 100%;
+    }
+    /*Resume page end*/
+}
