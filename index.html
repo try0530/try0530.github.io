@@ -8,43 +8,151 @@
     <script src="https://kit.fontawesome.com/17e02eb62e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <div class="nav-bar">
-            <a href="#" class="current-page">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="project.html">Project</a>
-        </div> 
-    </nav>
-    <section class="introduction">
-        <div class="intro-info">
-            <div class="intro-txt">
-                <h2>Ya-Hsuan Yang</h2>
-                <p>
-                    Hello, I'm Ya-Hsuan (Terry) Yang.<br>
-                    Currently pursing my Masters degree in Human Computer Interaction at Rochester Institute of Technology, New York (2022-present).
-                </p>
-                <p><small>Front-end Developer | UI/UX designer</small></p>
-            </div>
-            
-            <div class="contact">
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i>Phone: <span>+1(562)399-2474</span></li>
-                    <li><i class="fa-regular fa-envelope"></i>Email: <span>s900003terry@gmail.com<br>yy9451@rit.edu</span></li>
-                    <li><i class="fa-brands fa-linkedin"></i>LinkedIn: <a href="https://www.linkedin.com/in/yahsuan-yang-terry" target="_blank">yahsuan-yang-terry</a></li>
-                </ul>
-            </div>
+    <header class="home-header">
+        <nav class="nav">
+            <a href="#" class="icon-name menu-a">YA-HSUAN YANG</a>
 
-            <div class="more-info">
-                <button class="otherpage-button">Resume</button>
-                <button class="otherpage-button">Project</button>
+            <ul class="menu">
+                <li class="menu-li"><a class="menu-a" href="resume.html">RESUME</a></li>
+                <li class="menu-li"><a class="menu-a" href="project.html">PROJECT</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-info">
+            <div class="header-detail">
+                <h1>YA-HSUAN<br>YANG</h1>
+                <h4>Front-End developer | UI/UX Designer</h4>
+                <h4>Human Computer Interaction, MS | Rochester Institute of Technology</h4>
+                <p>&#9866;</p>
+                <!-- personal infomation -->
+                <div class="header-info-detail">
+                    <a href="mailto:yy9451@rit.edu" target="_blank">
+                        <i class="fa-regular fa-envelope i-decorate-white"></i>
+                        <p>yy9451@rit.edu</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yahsuan-yang-terry/" target="_blank">
+                        <i class="fa-brands fa-linkedin i-decorate-white"></i>
+                        <p>/yahsuan-yang-terry</p>
+                    </a>
+                </div>
+            </div>
+        </div>        
+</header>
+
+    <!-- About Me Section -->
+    <section id="about-section" class="section">
+        <h3>ABOUT</h3>
+        <div class="about-info">
+            <div class="about-detail">
+                <p>
+                    Hi! I'm <span>Ya-Hsuan (Terry) Yang</span>.<br><br>
+                    Currently pursing my Masters degree in Human Computer Interaction at Rochester Institute of Technology, New York.<br>
+                    I'm a software developer turned UI/UX enthusiast. My journey began in college, where I discovered my love for coding.
+                    After graduating, I dived into software development, realizing the profound impact of good UI/UX on user interactions.<br><br>
+                
+                    Now, my focus is on becoming a skilled Front-End Developer, specializing in creating websites that are not only functional but also user-friendly and 
+                    visually appealing. I'm passionate about blending creativity with functionality to craft seamless digital experiences.
+                </p>
+                <p>&#9866;</p>
+                <div class="about-skills">
+                    <h4>SKILLS</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>UI/UX Design</li>
+                        <li>Figma</li>
+                        <li>SQL</li>
+                        <li>PL/SQL</li>
+                    </ul>
+                </div>
+                <p>&#9866;</p>
+                <div>
+                    <h4>Language</h4>
+                    <div class="about-language">
+                        <ul>
+                            <li>Mandarin(Native)</li>
+                            <li>English</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>&#9866;</p>
+                <div>
+                    <h4>HOBBIES</h4>
+                    <div class="about-hobbies">
+                        <div>
+                            <h4>Outdoor hobbies</h4>
+                            <ul>
+                                <li>Freediving</li>
+                                <li>Traveling</li>
+                                <li>Snowboarding</li>
+                            </ul>
+                        </div>
+        
+                        <div>
+                            <h4>Indoor hobbies</h4>
+                            <ul>
+                                <li>Reading</li>
+                                <li>Illustrating</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="assets/images/self-pic.jpg" alt="personal picture">
             </div>
         </div>
-
-        <img src="assets/images/self-pic.jpg" class="self-pic">
+        
     </section>
 
-    <section class="projects">
-        <button>See more projects</button>
+    <!-- Project Section -->
+    <section class="section">
+        <h3>PROJECT</h3>
+        <!--
+            我要怎麼做，才能讓他變成可以點的方框? 整個框都可以連結過去，然後會顯示我這個project用了哪些技能?
+            目前想法：將div用javascript設定成clickable，這樣就可以監聽，但是這樣是不是每個都要設定一個監聽?
+        -->
+        <div class="project-box">
+            <a href="https://try0530.github.io/divingmind/" target="_blank" class="project-link"> </a>
+            <div>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div> 
+        </div>
+
+        <div class="project-box">
+            <div>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div> 
+        </div>
+
+        <div class="project-box">
+            <div>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div> 
+        </div>
+
+        <div class="project-box">
+            <div>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div> 
+        </div>
         
     </section>
 
@@ -53,10 +161,10 @@
     <footer>
         &copy;Ya-Hsuan Yang, 2024
         <div>
-            <a href="mailto:s900003terry@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/yahsuan-yang-terry/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="tel:+15623992474"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:s900003terry@gmail.com" target="_blank"><i class="fa-regular fa-envelope i-decorate-white"></i></a>
+            <a href="https://www.linkedin.com/in/yahsuan-yang-terry/" target="_blank"><i class="fa-brands fa-linkedin i-decorate-white"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-github i-decorate-white"></i></a>
+            <a href="tel:+15623992474"><i class="fa-solid fa-phone i-decorate-white"></i></a>
         </div>
     </footer>
 </body>
