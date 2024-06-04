@@ -6,6 +6,9 @@ import Portfolio3 from "../../assets/resume.png";
 import Portfolio4 from "../../assets/resume.png";
 import Portfolio5 from "../../assets/resume.png";
 import Portfolio6 from "../../assets/resume.png";
+import ProjectItem from "../ProjectItem/ProjectItem";
+
+import projects from "../../assets/projects.json";
 
 const Projects = () => {
   return (
@@ -17,6 +20,7 @@ const Projects = () => {
         experience to help businesses.
       </span>
       <div className="worksImgs">
+        <ProjectItem data={projects} />
         <img src={Portfolio1} alt="" className="worksImg" />
         <img src={Portfolio2} alt="" className="worksImg" />
         <img src={Portfolio3} alt="" className="worksImg" />

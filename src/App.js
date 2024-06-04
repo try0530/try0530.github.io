@@ -1,18 +1,20 @@
-import Educations from "./components/Educations/Educations";
+import Works from "./components/Works/Works";
 import Footer from "./components/Footer/Footer";
 import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
+import About from "./components/About/About";
+// import Educations from "./components/Educations/Educations";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Intro />
-      <Skills />
+      <About />
       <Projects />
-      <Educations />
+      <Works />
+      {/* <Educations /> */}
       <Footer />
     </div>
   );

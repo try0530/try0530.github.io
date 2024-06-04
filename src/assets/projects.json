@@ -1,0 +1,20 @@
+[
+  {
+    "name": "E-Commerce",
+    "skills": ["HTML/CSS", "JavaScript", "React.js"],
+    "github": "",
+    "live": ""
+  },
+  {
+    "name": "Dashboard",
+    "skills": ["HTML/CSS", "JavaScript", "React.js"],
+    "github": "",
+    "live": ""
+  },
+  {
+    "name": "",
+    "skills": ["HTML/CSS", "JavaScript", "React.js", ""],
+    "github": "",
+    "live": ""
+  }
+]

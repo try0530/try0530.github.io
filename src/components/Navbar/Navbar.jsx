@@ -49,14 +49,25 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="education"
+          to="works"
           spy={true}
           smooth={true}
           offset={-50}
           duration={500}
           className="desktopMenuListItem"
         >
-          Education
+          Works
+        </Link>
+        <Link
+          activeClass="active"
+          to="educations"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          Educations
         </Link>
       </div>
       <button
@@ -120,7 +131,7 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="education"
+          to="works"
           spy={true}
           smooth={true}
           offset={-50}
@@ -130,7 +141,21 @@ const Navbar = () => {
             setShowMenu(false);
           }}
         >
-          Education
+          Works
+        </Link>
+        <Link
+          activeClass="active"
+          to="educations"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="listItem"
+          onClick={() => {
+            setShowMenu(false);
+          }}
+        >
+          Educations
         </Link>
         <Link
           activeClass="active"

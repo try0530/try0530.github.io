@@ -1,3 +1,17 @@
+:root {
+  /* --primary-color: #8bc34a;
+  --secondary-color: #c5e1a5;
+  --background-color: #f9fbe7;
+  --background-color02: #f9fcdc;
+  --contrast-color: #ff9800;
+  --text-color: #33691e; */
+  --primary-color: #9ba99a;
+  --secondary-color: #33791e;
+  --background-color: #f9fbe7;
+  --contrast-color: #ff9800;
+  --text-color: #f9fbe7;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +19,8 @@
   text-decoration: none;
   background: transparent;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+
+  border: 1px solid white;
 }
 
 body {
