@@ -1,11 +1,5 @@
 import React from "react";
 import "./projects.css";
-import Portfolio1 from "../../assets/resume.png";
-import Portfolio2 from "../../assets/resume.png";
-import Portfolio3 from "../../assets/resume.png";
-import Portfolio4 from "../../assets/resume.png";
-import Portfolio5 from "../../assets/resume.png";
-import Portfolio6 from "../../assets/resume.png";
 import ProjectItem from "../ProjectItem/ProjectItem";
 
 import projects from "../../assets/projects.json";
@@ -19,16 +13,21 @@ const Projects = () => {
         that my work is pixel perfect. I am excited to bring my skills and
         experience to help businesses.
       </span>
-      <div className="worksImgs">
-        <ProjectItem data={projects} />
+      {projects.length > 0 && (
+        <div className="project-container">
+          {projects.map((data, id) => (
+            <ProjectItem data={data} key={id} />
+          ))}
+        </div>
+      )}
+      {/* <div className="worksImgs">
         <img src={Portfolio1} alt="" className="worksImg" />
         <img src={Portfolio2} alt="" className="worksImg" />
         <img src={Portfolio3} alt="" className="worksImg" />
         <img src={Portfolio4} alt="" className="worksImg" />
         <img src={Portfolio5} alt="" className="worksImg" />
         <img src={Portfolio6} alt="" className="worksImg" />
-      </div>
-      <button className="worksBtn">See More</button>
+      </div> */}
     </section>
   );
 };

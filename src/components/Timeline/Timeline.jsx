@@ -7,8 +7,8 @@ const Timeline = ({ timelineData }) => {
     <>
       {timelineData.length > 0 && (
         <div className="timeline-container">
-          {timelineData.map((data) => (
-            <TimelineItem data={data} />
+          {timelineData.map((data, id) => (
+            <TimelineItem data={data} key={id} />
           ))}
         </div>
       )}

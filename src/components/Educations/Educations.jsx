@@ -1,17 +1,13 @@
 import React from "react";
 import "./educations.css";
 import educations from "../../assets/educations.json";
-import TimelineItem from "../TimelineItem/TimelineItem";
+import Timeline from "../Timeline/Timeline";
 
 const Educations = () => {
   return (
     <section id="educations">
-      <h2>Educations</h2>
-      <div className="timeline-container">
-        {educations.map((data, id) => (
-          <TimelineItem data={data} key={id} />
-        ))}
-      </div>
+      <h2 className="educationsTitle">Educations</h2>
+      <Timeline timelineData={educations} />
     </section>
   );
 };

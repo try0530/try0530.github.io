@@ -2,19 +2,33 @@
   {
     "name": "E-Commerce",
     "skills": ["HTML/CSS", "JavaScript", "React.js"],
-    "github": "",
-    "live": ""
+    "desc": "This is a e-commerce website",
+    "github": "https://github.com/try0530/react-ecommerce01",
+    "live": "https://react-ecommerce01-tau.vercel.app/",
+    "img": "../src/assets/ecommerce.jpg"
   },
   {
     "name": "Dashboard",
     "skills": ["HTML/CSS", "JavaScript", "React.js"],
-    "github": "",
-    "live": ""
+    "desc": "",
+    "github": "#",
+    "live": "#",
+    "img": "../../assets/resume.png"
   },
   {
     "name": "",
-    "skills": ["HTML/CSS", "JavaScript", "React.js", ""],
-    "github": "",
-    "live": ""
+    "skills": ["HTML/CSS", "JavaScript", "React.js", "Next.js"],
+    "desc": "",
+    "github": "#",
+    "live": "#",
+    "img": "../../assets/resume.png"
+  },
+  {
+    "name": "",
+    "skills": ["HTML/CSS", "JavaScript", "React.js", "Mui", "SASS"],
+    "desc": "",
+    "github": "#",
+    "live": "#",
+    "img": "../src/assets/resume.png"
   }
 ]

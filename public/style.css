@@ -24,8 +24,21 @@
 }
 
 body {
-  background: rgb(30, 30, 30);
-  color: white;
+  background: #dcdddc;
+  color: #596259;
   overflow: hidden;
   overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #596259;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }

@@ -7,7 +7,7 @@
 }
 
 .timeline-container::after {
-  background-color: #e17b77;
+  background-color: #cc1c45;
   content: "";
   position: absolute;
   left: calc(50% - 2px);
@@ -32,9 +32,9 @@
 }
 
 .timeline-item-content {
-  box-shadow: 0 0 5px rgb(255, 255, 255, 0.3);
+  box-shadow: 0 0 5px #596259;
   border-radius: 5px;
-  background-color: black;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -43,12 +43,13 @@
   width: 400px;
   max-width: 100%;
   text-align: right;
+  border: 2px solid #596259;
 }
 
 .timeline-item-content::after {
   content: " ";
-  background-color: black;
-  box-shadow: 1px -1px 1px rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  box-shadow: 1px -1px 1px #596259;
   position: absolute;
   right: -7.5px;
   top: calc(50% - 7.5px);
@@ -60,12 +61,12 @@
 .timeline-item:nth-child(odd) .timeline-item-content::after {
   right: auto;
   left: -7.5px;
-  box-shadow: -1px 1px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: -1px 1px 1px #596259;
 }
 
 .timeline-item-content .circle {
   background-color: #ffffff;
-  border: 3px solid #e17b77;
+  border: 3px solid #cc1c45;
   border-radius: 50%;
   position: absolute;
   top: calc(50% - 10px);
@@ -99,7 +100,7 @@
   .timeline-item-content::after {
     right: auto;
     left: -7.5px;
-    box-shadow: -1px 1px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: -1px 1px 1px #596259;
   }
 
   .timeline-item-content .circle {

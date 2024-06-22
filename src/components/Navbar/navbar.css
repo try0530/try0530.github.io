@@ -1,8 +1,8 @@
 .navbar {
-  background: rgb(30, 30, 30);
+  background: #dcdddc;
   height: 5rem;
   width: 100vw;
-  max-width: 75rem;
+  /* max-width: 90rem; */
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
@@ -25,14 +25,14 @@
 }
 
 .desktopMenuListItem:hover {
-  color: yellow;
+  color: #cc1c45;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid #cc1c45;
 }
 
 .desktopMenuBtn {
   background: white;
-  color: black;
+  color: #596259;
   border: none;
   display: flex;
   align-items: center;
@@ -51,8 +51,8 @@
 }
 
 .active {
-  color: yellow;
-  border-bottom: 3px solid yellow;
+  color: #cc1c45;
+  border-bottom: 3px solid #cc1c45;
   padding-bottom: 0.5rem;
 }
 

@@ -1,7 +1,25 @@
 #intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  background-color: #929c92;
+}
+
+.bg {
+  height: 100%;
+}
+
+.introContent {
+  padding-right: 1rem;
+  background-color: #dcdddc;
+  width: 65%;
+}
+
+/* #intro {
   height: calc(100vh - 4rem);
   width: 100vw;
-  max-width: 75rem;
+  max-width: 70rem;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -25,39 +43,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .hello {
   font-size: 1.75rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .introName {
-  color: yellow;
+  color: #cc1c45;
 }
 
-.introPara {
-  font-size: medium;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.btn {
-  background: white;
-  margin: 1rem 0;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 2rem;
-}
-
-.btnImg {
-  object-fit: cover;
-  margin: 0 0.25rem;
-  height: 1rem;
+.intro-img {
+  width: 30%;
+  height: calc(100vh - 4rem);
 }
 
 @media screen and (max-width: 840px) {
   .bg {
-    right: -20vw;
+    width: 80vw;
+    height: 80vw;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .introContent {
+    margin: 0 1rem;
+    padding-right: 0;
   }
 }
